@@ -1,0 +1,570 @@
+/*
+Theme Name: Liberty Talks Podcast
+Theme URI: westonmedia.co/libertytalkspodcast
+Author: Matt Travis
+Author URI: westonmedia.co
+Description: Site for Customer Liberty Talks Podcast
+Version: 1.0
+Tags: Custom
+*/
+
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 2.0rem;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+nav {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 a:hover {
+	color: #f04400;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+/*****Class*****/
+
+
+/*.div-area-testing {
+	display: flex;
+	justify-content: space-around;
+}
+
+.testing-triplet {
+	flex: 1;
+	width: 30%;
+	margin: auto;
+}*/
+
+#nav-container-box {
+  box-shadow: 0 0 3px black;
+	width: 100vw;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.inside-nav-container {
+  display: flex;
+	align-items: center;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+	margin: auto 10px auto 0;
+}
+
+.burger div {
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	margin: 5px;
+}
+
+.logo-image {
+  vertical-align: baseline;
+  width: 100px;
+  height: auto;
+  margin: 10px 10px 5px 0;
+}
+
+.nav-ul-list {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-item {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+ }
+
+.menu-item a:hover {
+  color: #f04400;
+  opacity: 0.8;
+  text-decoration: none;}
+
+ .social-links {
+  display: flex;
+ }
+
+ .social-link-ind {
+   width: 25px;
+   height: 25px;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 5px;
+   margin-right: 5px;
+
+ }
+
+.banner-area {
+	width: 100vw;
+	max-width: 1000px;
+	margin: 10px auto;
+	position: relative;
+}
+
+.banner-image {
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+#banner-image-short {
+	display: none;
+}
+
+#sub-button-div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto 30% auto 3%;
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+#sub-button-div h5 {
+	color: white;
+	text-align: center;
+	
+}
+
+#sub-button-div button {
+	border: 0;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.main-content {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+
+.top-section {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.main-post {
+	margin: 15px 10px 15px 0;
+	
+}
+
+
+.thumbnail-image-responsive {
+	display: none;
+	
+}
+
+.main-side-posts-medium-thumbnail, .mid-posts-small-thumbnail {
+	display: none;
+}
+
+.main-post h1 {
+	margin-top: 0;
+	margin-bottom:0;
+	
+}
+
+.main-post p {
+	font-size: 0.65em;
+	margin: 0;
+}
+
+.main-side-posts {
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0 15px 10px;
+}
+
+.sub-main-side-posts {
+	display: flex;
+	margin: 0 0 10px 0;
+	
+}
+
+.sub-main-side-posts h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	vertical-align: baseline;
+	font-size: 0.90em;
+}
+
+.sub-main-side-posts p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 0.65em;
+}
+
+.h1-author-smsp {
+	margin: auto 0 auto 10px;
+}
+
+.a-no-decoration {
+	text-decoration: none;
+	color: black;
+}
+
+.middle-section {
+	max-width: 1000px;
+	margin: 0 auto;
+	
+	
+}
+
+.sub-mid-posts {
+	display: flex;
+	margin: 0 0 10px 0;
+}
+
+.sub-mid-posts p{
+	font-size: 0.65em;
+}
+
+.mid-posts-medium-thmubnail {
+	
+}
+
+.h1-author-mid-posts h1 {
+
+}
+
+.footer-section {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.podcast-playlist {
+	margin: 15px;
+}
+
+.podcast-playlist h5 {
+	color: gray;
+}
+
+.social-links-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social-link-ind-footer img {
+	width: 35px;
+	height: 35px;
+	margin: 15px;
+}
+
+
+/*********Individual-Posts**********/
+
+.posts-main-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.posts-section {
+	margin: 15px;
+	width: 70%;
+}
+
+.thumbnail-h1-d img {
+	width: 100%;
+	height: auto;
+}
+
+.author-date-span {
+	display: flex;
+	align-items: center;
+}
+
+#posts-avatar-circle img {
+	border-radius: 50%;
+}
+
+.author-date-span p {
+	margin-right: 25px;
+	font-size: 0.8em;
+}
+
+
+/**********Sidebar-Primary**********/
+
+.sidebar {
+	margin: 15px;
+	width: 25%;
+}
+
+.primary-sidebar-widget-area ul {
+	font-family: 'Oswald', sans-serif;
+	padding: 0 20px;
+}
+	
+.primary-sidebar-widget-area ul li a {
+	color: black;
+}
+
+.primary-sidebar-widget-area ul li a:hover {
+	color: #f04400;
+}
+
+
+/**********MEDIA**********/
+
+@media screen and (max-width: 1000px) {	
+
+.top-section {	
+		display: block;
+		width: 600px;
+	}
+	
+.main-post {
+		margin-right: 0;
+	}
+	
+.main-side-posts {
+		margin-left: 0;
+		margin-right: 0;
+}
+	
+.thumbnail-image-set {
+	
+	}
+	
+.main-side-posts-small-thumbnail {
+	display: none;
+}
+	
+.main-side-posts-medium-thumbnail {
+	display: block;
+}
+	
+.sub-main-side-posts h1, .h1-author-smsp h1 {
+	font-size: 1.25em;
+}
+
+.sub-main-side-posts p {
+
+}
+.middle-section {
+	width: 600px;
+	margin: 15px auto;
+	}
+	
+/*Individual-Posts*/
+
+.posts-main-container {
+	display: block;
+	width: 600px;
+}
+	
+.posts-section {
+	width: 100%;
+}
+	
+	
+/**Sidebar**/
+	
+.sidebar {
+	width: 100%;
+}
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+	
+.nav-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+	
+.burger {
+	display: block;
+}
+	
+.logo-image {
+  width: 50px;
+  margin: 5px 5px 0 0;
+}
+	
+.nav-ul-list {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right:0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	/*transform: translateX(100%);*/
+	
+	}
+	
+.menu-item {
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
+	
+.menu-item a {
+		
+}
+	
+.nav-active {
+	display: block;
+	/*transform: translateX(0%);*/
+}
+	
+.social-link-ind {
+  width: 20px;
+  height: 20px;
+}
+	
+.extra-links-container {
+		display: none;
+}
+
+#sub-button-div {
+	margin-right: 35%;
+}
+
+#banner-image-long {
+	display: none;
+}
+
+#banner-image-short {
+	display: inline-block;
+}
+
+.main-content {
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+	
+.top-section, .middle-section, .bottom-section{	
+		width: 100%;
+	}
+	
+.thumbnail-image-responsive {
+		display: block;
+		width: 100%;
+		height: 100%
+			
+	}
+	
+.thumbnail-image-set {
+		display: none;
+	}
+
+	
+/**Individual-Posts**/
+
+.posts-main-container {
+	width: 100%;;
+}	
+	
+}
+
+
+
+@media (max-width: 475px) {
+	
+.nav-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+	
+#sub-button-div h5 {
+	color: white;
+	font-size: 0.8em;
+	text-align: center;
+	margin-bottom: 3px;
+}
+	
+#sub-button-div button {
+	border: 0;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 0.75em;
+	padding-top: 0;
+}
+	
+.main-content {
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+	
+.main-post h1 {
+	font-size: 1.75em;
+}
+	
+.sub-main-side-posts h1, .h1-author-smsp h1 {
+	font-size: 1em;
+}
+
+	.main-side-posts-small-thumbnail, .mid-posts-small-thumbnail {
+	display: block;
+}
+	
+.main-side-posts-medium-thumbnail, .mid-posts-medium-thumbnail {
+	display: none;
+}
+	
+/*Individual-Posts*/
+
+.posts-main-container {
+}
+
+}
+
