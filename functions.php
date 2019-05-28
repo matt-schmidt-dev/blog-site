@@ -1,5 +1,23 @@
 <?php
 
+// STOP WORDPRESS REMOVING TAGS
+function tags_tinymce_fix( $init )
+{
+  // html elements being stripped
+  $init['extended_valid_elements'] = 'div[*],article[*]';
+  // don't remove line breaks
+  $init['remove_linebreaks'] = false;
+  // convert newline characters to BR
+  $init['convert_newlines_to_brs'] = true;
+  // don't remove redundant BR
+  $init['remove_redundant_brs'] = false;
+  // pass back to wordpress
+  return $init;
+}
+add_filter('tiny_mce_before_init', 'tags_tinymce_fix');
+
+
+
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/
@@ -68,7 +86,7 @@ function my_register_sidebars() {
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 75;
+    return 50;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 

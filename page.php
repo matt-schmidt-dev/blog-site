@@ -9,8 +9,6 @@
 				<?php the_title();?>
 			</h2>
 			
-			<img class="pages-profile-image" src="<?php the_field('header-image');?>">
-			
 			<span class="pages-content-main">
 				<?php the_content(); ?>
 			</span>
@@ -24,6 +22,9 @@
 	<?php endif; ?>
 		
 	</div>
+	
+	<hr>
+	
 	
 	<?php get_sidebar('primary');?>
 	

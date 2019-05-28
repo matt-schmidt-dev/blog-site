@@ -35,6 +35,8 @@
 		</div>
 	</div>
 	
+	<hr>
+	
 	<?php get_sidebar('primary');?>
 	
 </div>

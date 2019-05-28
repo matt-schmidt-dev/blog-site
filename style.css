@@ -1,9 +1,9 @@
 /*
-Theme Name: Liberty Talks Podcast
-Theme URI: westonmedia.co/libertytalkspodcast
+Theme Name: Liberty Talks
+Theme URI: westonmedia.co/libertytalks
 Author: Matt Travis
 Author URI: westonmedia.co
-Description: Site for Customer Liberty Talks Podcast
+Description: Site for Customer Liberty Talks
 Version: 1.0
 Tags: Custom
 */
@@ -11,15 +11,14 @@ Tags: Custom
 
 body {
   font-family: 'Playfair Display', serif;
-  box-sizing: border-box;
-  overflow-x: hidden;
+ 
 }
 
 
 h1 {
   font-size: 2.0rem;
 }
-
+ 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
 }
@@ -34,11 +33,34 @@ h1 a:hover {
 	text-decoration: none;
 }
 
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	display: block;
+	margin: 2px auto;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+	font-size: 0.8em;
+	font-family: 'Oswald', sans-serif;
+}
+
+hr {
+	margin: 0;
+}
+
 /*****Class*****/
+
+.single-item {
+	
+}
 
 #nav-container-box {
   box-shadow: 0 0 3px black;
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 }
 
@@ -90,6 +112,7 @@ h1 a:hover {
   padding-left: 10px;
   padding-right: 10px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .menu-item a {
@@ -117,7 +140,7 @@ h1 a:hover {
  }
 
 .banner-area {
-	width: 100vw;
+	width: 100%;
 	max-width: 1000px;
 	margin: 10px auto;
 	position: relative;
@@ -149,7 +172,6 @@ h1 a:hover {
 #sub-button-div h5 {
 	color: white;
 	text-align: center;
-
 }
 
 #sub-button-div button {
@@ -158,6 +180,7 @@ h1 a:hover {
 	background-color: red;
 	color: white;
 	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
 }
 
 .main-content {
@@ -179,13 +202,13 @@ h1 a:hover {
 
 .main-post {
 	margin: 15px 10px 15px 0;
-
+	
 }
 
 
 .thumbnail-image-responsive {
 	display: none;
-
+	
 }
 
 .main-side-posts-medium-thumbnail, .mid-posts-small-thumbnail {
@@ -195,7 +218,7 @@ h1 a:hover {
 .main-post h1 {
 	margin-top: 0;
 	margin-bottom:0;
-
+	
 }
 
 .main-post p {
@@ -212,7 +235,7 @@ h1 a:hover {
 .sub-main-side-posts {
 	display: flex;
 	margin: 0 0 10px 0;
-
+	
 }
 
 .sub-main-side-posts h1 {
@@ -237,11 +260,62 @@ h1 a:hover {
 	color: black;
 }
 
+#slideshow {
+	margin: 15px 0;
+}
+
+.ltl-banner-horz {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ltl-img-horz {
+	width: 100%;
+	margin: 0 auto 20px auto;
+}
+
+.ltl-banner {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+#ltl-img {
+	height: 200px;
+	margin: 0 auto 10px auto;
+}
+
+.vid-yt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.clients iframe {
+	width: 31%;
+}
+
+.c1 iframe {
+	padding: 0 10px 0 0;
+}
+
+.c2 iframe {
+	padding: 0 10px 0 10px;
+}
+
+.c3 iframe {
+	padding: 0 0 0 10px;
+}
+
+.clients iframe {
+	width: 100%;
+}
+
 .middle-section {
 	max-width: 1000px;
 	margin: 0 auto;
-
-
 }
 
 .sub-mid-posts {
@@ -254,7 +328,7 @@ h1 a:hover {
 }
 
 .mid-posts-medium-thmubnail {
-
+	
 }
 
 .h1-author-mid-posts h1 {
@@ -311,6 +385,17 @@ h1 a:hover {
 	margin-right: 15px;
 }
 
+.archive-post-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+.archive-post-content h3 {
+	margin-top: 5px;
+}
+
 .archive-post-content a {
 	text-decoration: none;
 	color: black;
@@ -322,12 +407,84 @@ h1 a:hover {
 
 .archive-post-content p {
 	font-size: 0.9em;
+	margin-bottom: 5px;
 }
 
 .archive-post-content a:hover {
 	color: #f04400;
   	opacity: 0.8;
 }
+
+
+/**********Pages**********/
+
+.pages-main-container {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1000px;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.pages-section {
+	margin: 15px;
+	width: 70%;
+}
+
+.pages-section h2 {
+	text-align: center;
+}
+
+/*****Team-Page*****/
+
+.team-profile-img {
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.team-member-odd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member-even {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio {
+  margin: 10px;
+}
+
+.name-pos-social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5em;
+}
+
+.name-pos-social h5 {
+	margin: 0;
+}
+
+ .social-links-team {
+  display: flex;
+  align-items: center;
+ }
+
+ .social-link-ind-team {
+   width: 20px;
+   height: 20px;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 3px;
+   margin-right: 3px;
+ }
+
 
 /*********Individual-Posts**********/
 
@@ -341,6 +498,14 @@ h1 a:hover {
 .posts-section {
 	margin: 15px;
 	width: 70%;
+}
+
+.pages-section h1 {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .thumbnail-h1-d img {
@@ -362,7 +527,6 @@ h1 a:hover {
 	font-size: 0.8em;
 }
 
-
 /**********Sidebar-Primary**********/
 
 .sidebar {
@@ -374,7 +538,7 @@ h1 a:hover {
 	font-family: 'Oswald', sans-serif;
 	padding: 0 20px;
 }
-
+	
 .primary-sidebar-widget-area ul li a {
 	color: black;
 }
@@ -383,37 +547,84 @@ h1 a:hover {
 	color: #f04400;
 }
 
+#e-form-primary-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.primary-sidebar-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-style: solid;
+	border-radius: 5%;
+	border-width: 1px;
+	box-shadow: 1px 1px 2px gray;
+	padding: 5px;
+	background-color: whitesmoke;
+	margin: 15px auto;
+	min-width: 250px;
+	max-width: 300px;
+}
+
+.primary-sidebar-email p {
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+.e-submit {
+	background-color: red;
+	letter-spacing: 1px;
+	border-style: solid;
+	border-color: black;
+	color: whitesmoke;
+	padding: 3px 7px;
+}
+
+.fp-heading h5 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.sidebar-primary-fp {
+	
+}
+
 
 /**********MEDIA**********/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {	
 
-.top-section {
+.top-section {	
 		display: block;
 		width: 600px;
 	}
-
+	
 .main-post {
 		margin-right: 0;
 	}
-
+	
 .main-side-posts {
 		margin-left: 0;
 		margin-right: 0;
 }
-
+	
 .thumbnail-image-set {
-
+	
 	}
-
+	
 .main-side-posts-small-thumbnail {
 	display: none;
 }
-
+	
 .main-side-posts-medium-thumbnail {
 	display: block;
 }
-
+	
 .sub-main-side-posts h1, .h1-author-smsp h1 {
 	font-size: 1.25em;
 }
@@ -421,27 +632,71 @@ h1 a:hover {
 .sub-main-side-posts p {
 
 }
+	
 .middle-section {
 	width: 600px;
 	margin: 15px auto;
 	}
-
+	
 /*Individual-Posts*/
 
 .posts-main-container {
-	display: block;
+	flex-direction: column;
 	width: 600px;
 }
-
+	
 .posts-section {
-	width: 100%;
+	margin: 15px auto;
+	width: 96%;
+}
+	
+/**Pages**/	
+	
+.pages-main-container {
+	display: block;
 }
 
+.pages-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px auto;
+}
+	
+	
+/**********Archives**********/
+	
+.archive-post-content h3 {
+	font-size: 1.5em;
+	margin-top: 2px;
+}
 
+.archive-post-content span {
+	font-size: 0.7em;
+}
+
+.archive-post-content p {
+	font-size: 0.8em;
+	margin-bottom: 2px;
+}
+	
+/*****Team-Page*****/
+	
+.bio h5 {
+	font-size: 1.2em;
+}
+	
+.bio p {
+	font-size: 0.9em;
+}
+	
+	
 /**Sidebar**/
-
+	
 .sidebar {
-	width: 100%;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 }
@@ -449,21 +704,21 @@ h1 a:hover {
 
 
 @media screen and (max-width: 700px) {
-
+	
 .nav-container {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+	
 .burger {
 	display: block;
 }
-
+	
 .logo-image {
   width: 50px;
   margin: 5px 5px 0 0;
 }
-
+	
 .nav-ul-list {
 	display: none;
 	position: absolute;
@@ -476,28 +731,37 @@ h1 a:hover {
 	background-color: white;
 	z-index: 1;
 	/*transform: translateX(100%);*/
-
+	
 	}
-
+	
 .menu-item {
 	padding: 5px 0 5px 0;
 	text-align: center;
 }
-
+	
 .menu-item a {
-
+		
 }
-
+	
 .nav-active {
 	display: block;
-	/*transform: translateX(0%);*/
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right:0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+	/*transform: translateX(100%);*/
 }
-
+	
 .social-link-ind {
   width: 20px;
   height: 20px;
 }
-
+	
 .extra-links-container {
 		display: none;
 }
@@ -518,47 +782,89 @@ h1 a:hover {
 	padding-left: 15px;
 	padding-right: 15px;
 	}
-
-.top-section, .middle-section, .bottom-section{
+	
+.top-section, .middle-section, .bottom-section{	
 		width: 100%;
 	}
-
+	
 .thumbnail-image-responsive {
 		display: block;
 		width: 100%;
-		height: 100%
-
+		height: 100%;
+			
 	}
-
+	
 .thumbnail-image-set {
 		display: none;
 	}
+	
+	.c2 {
+		padding-right: 0;
+	}
+	
+.c3 {
+		display: none;
+	}
+	
+.ltl-banner-horz {
+	display: none;
+}
+	
+.ltl-banner {
+		display: flex;
+	}
+	
+/**Pages**/
+
+.pages-section {
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+	
+/*****Team-Page*****/
+
+.team-profile-img {
+	margin: 10px 10px 0 10px;
+}
 
 
+.team-member-odd {
+	flex-direction: column;
+}
+	
+.team-member-even {
+	flex-direction: column-reverse;
+}
+
+.bio {
+	margin: 0 10px;
+}
+	
 /**Individual-Posts**/
 
 .posts-main-container {
-	width: 100%;;
-}
-
+	width: 100%;
+}	
+	
 }
 
 
 
 @media (max-width: 475px) {
-
+	
 .nav-container {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+	
 #sub-button-div h5 {
 	color: white;
 	font-size: 0.8em;
 	text-align: center;
 	margin-bottom: 3px;
 }
-
+	
 #sub-button-div button {
 	border: 0;
 	border-radius: 3px;
@@ -568,16 +874,16 @@ h1 a:hover {
 	font-size: 0.75em;
 	padding-top: 0;
 }
-
+	
 .main-content {
 	padding-left: 10px;
 	padding-right: 10px;
 	}
-
+	
 .main-post h1 {
 	font-size: 1.75em;
 }
-
+	
 .sub-main-side-posts h1, .h1-author-smsp h1 {
 	font-size: 1em;
 }
@@ -585,14 +891,28 @@ h1 a:hover {
 	.main-side-posts-small-thumbnail, .mid-posts-small-thumbnail {
 	display: block;
 }
-
+	
 .main-side-posts-medium-thumbnail, .mid-posts-medium-thumbnail {
 	display: none;
 }
-
+	
+.c1 {
+		padding-right: 0;
+	}
+	
+.c2 {
+		display: none;
+	}
+	
+.c3 {
+		display: none;
+	}
+	
 /*Individual-Posts*/
 
-.posts-main-container {
+.posts-section {
+	
 }
 
 }
+
