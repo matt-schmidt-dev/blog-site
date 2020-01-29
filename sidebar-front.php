@@ -1,20 +1,15 @@
-<div id="primary" class="sidebar">
+<div id="this-front-sidebar" class="front-sidebar">
 	
-    <?php do_action( 'before_sidebar' ); ?>
-    <?php if ( ! dynamic_sidebar( 'primary-sidebar' ) ) : ?>
-	<?php endif; ?>
-	
-	
-	<div class="primary-sidebar-email">
+	<div class="front-sidebar-email">
 		<h5>
 			SUBSCRIBE!
 		</h5>
 		<P>
 			Subscribe to our email list to recieve updates & exclusive content.
 		</P>
-		<form id="e-form-primary-sidebar" action="https://formspree.io/matts0809@gmail.com" method="POST">
-			<input class="e-name" type="text" name="Name" placeholder="Name" size="40" required>
-        	<input class="e-email" type="email" name="Email" placeholder="Email" size="40" required>
+		<form id="e-form-front-sidebar" action="https://formspree.io/matts0809@gmail.com" method="POST">
+			<input class="e-name" type="text" name="Name" placeholder="Name" size="35" required>
+        	<input class="e-email" type="email" name="Email" placeholder="Email" size="35" required>
         	<input class="e-submit" type="submit" value="SUBMIT">
 		</form>
 	</div>
@@ -32,12 +27,12 @@
 	</div>
 	
 		
-	<div class="main-side-posts sidebar-primary-fp">
+	<div class="main-side-posts sidebar-front-fp">
 		
  <?php // Loop#2 for category ID 23
   $sm_query = new WP_Query(array(
       'post__not_in'  =>  $dnd,
-      'posts_per_page'  =>  8));
+      'posts_per_page'  =>  4));
   while ($sm_query->have_posts()) :
     $sm_query->the_post(); ?>
 		
@@ -54,9 +49,5 @@
 		
   <?php endwhile; ?>
 		</div>		
-
-	<?php do_action( 'before_sidebar' ); ?>
-    <?php if ( ! dynamic_sidebar( 'primary-sidebar-two' ) ) : ?>
-	<?php endif; ?>
 	
 </div>

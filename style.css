@@ -9,22 +9,33 @@ Tags: Custom
 */
 
 
-body {
-  font-family: 'Playfair Display', serif;
- 
-}
+/**********Tags**********/
 
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
 
 h1 {
   font-size: 2.0rem;
 }
- 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Oswald', sans-serif;
+
+p {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+span {
+  font-family: 'Merriweather', serif;
+  margin: 0;
 }
 
 nav {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h1 a:hover {
@@ -44,19 +55,38 @@ input {
 	border-style: solid;
 	border-width: 1px;
 	padding: 2px;
-	font-size: 0.8em;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Lato', sans-serif;
+}
+
+textarea {
+    font-size: 1em;
 }
 
 hr {
 	margin: 0;
 }
 
-/*****Class*****/
-
-.single-item {
-	
+button {
+    font-family: 'Lato', sans-serif;
+    border-width: 0;
+	background-color: red;
+	color: white;
+	letter-spacing: 1px;
+	padding: 3px 10px;
+	margin: 10px auto 0 auto;
+	text-transform: uppercase;
 }
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+  color: #f04400;
+  opacity: 0.8;
+}
+
+/**********Header**********/
 
 #nav-container-box {
   box-shadow: 0 0 3px black;
@@ -67,7 +97,7 @@ hr {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 35px;
   padding-right: 35px;
@@ -123,7 +153,8 @@ hr {
 .menu-item a:hover {
   color: #f04400;
   opacity: 0.8;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
  .social-links {
   display: flex;
@@ -141,7 +172,7 @@ hr {
 
 .banner-area {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 10px auto;
 	position: relative;
 }
@@ -175,16 +206,10 @@ hr {
 }
 
 #sub-button-div button {
-	border: 0;
-	border-radius: 3px;
-	background-color: red;
-	color: white;
-	font-family: 'Oswald', sans-serif;
-	letter-spacing: 1px;
 }
 
 .main-content {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
@@ -196,34 +221,35 @@ hr {
 
 .top-section {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin: auto;
 }
 
 .main-post {
 	margin: 15px 10px 15px 0;
-	
+}
+
+
+.main-post h1 {
+    max-width: 600px;
 }
 
 
 .thumbnail-image-responsive {
-	display: none;
-	
+    display: none;
 }
+
 
 .main-side-posts-medium-thumbnail, .mid-posts-small-thumbnail {
 	display: none;
 }
 
 .main-post h1 {
-	margin-top: 0;
-	margin-bottom:0;
-	
+	margin: 0 0 5px 0;
 }
 
 .main-post p {
-	font-size: 0.65em;
-	margin: 0;
+	font-size: 0.75em;
 }
 
 .main-side-posts {
@@ -234,21 +260,19 @@ hr {
 
 .sub-main-side-posts {
 	display: flex;
+	align-items: center;
 	margin: 0 0 10px 0;
 	
 }
 
 .sub-main-side-posts h1 {
-	margin-top: 0;
-	margin-bottom: 0;
 	vertical-align: baseline;
-	font-size: 0.90em;
+	font-size: 1em;
+	margin: 0 0 5px 0;
 }
 
 .sub-main-side-posts p {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 0.65em;
+	font-size: 0.75em;
 }
 
 .h1-author-smsp {
@@ -258,10 +282,6 @@ hr {
 .a-no-decoration {
 	text-decoration: none;
 	color: black;
-}
-
-#slideshow {
-	margin: 15px 0;
 }
 
 .ltl-banner-horz {
@@ -282,58 +302,174 @@ hr {
 }
 
 #ltl-img {
-	height: 200px;
+	max-height: 200px;
+	max-width: 100%;
 	margin: 0 auto 10px auto;
 }
 
-.vid-yt {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-
-.clients iframe {
-	width: 31%;
-}
-
-.c1 iframe {
-	padding: 0 10px 0 0;
-}
-
-.c2 iframe {
-	padding: 0 10px 0 10px;
-}
-
-.c3 iframe {
-	padding: 0 0 0 10px;
-}
-
-.clients iframe {
-	width: 100%;
-}
-
 .middle-section {
-	max-width: 1000px;
+	max-width: 100%;
 	margin: 0 auto;
+}
+
+.m-s-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.m-s-2 {
+    
+}
+
+.m-s-load-one {
+    display: none;
+}
+
+.m-s-load-two {
+    display: none;
+}
+
+.m-s-1 .mid-posts {
+    width: 65%;
+}
+
+.m-s-2 .mid-posts {
+    width: 100%;
+}
+
+.m-s-load-one .mid-posts {
+    width: 100%;
+}
+
+.m-s-load-two .mid-posts {
+    width: 100%;
 }
 
 .sub-mid-posts {
 	display: flex;
+	align-items: center;
 	margin: 0 0 10px 0;
 }
 
+.sub-mid-posts h1 {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+}
+
 .sub-mid-posts p{
-	font-size: 0.65em;
+	font-size: 0.75em;
 }
 
 .mid-posts-medium-thmubnail {
-	
+    
 }
 
 .h1-author-mid-posts h1 {
-
+    
 }
+
+.load-next-ten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.load-next-ten-btn {
+    color: whitesmoke;
+    padding: 10px;
+    background: none;
+    margin: auto;
+    font-size: 1.3rem;
+    width: 100%;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+}
+
+.posts-active {
+    display: block;
+}
+
+
+
+
+/***  START YouTube API App  ***/
+.yt-carousel {
+  background-color: rgba(0,0,0,0);
+  position: relative;
+  width: 100%;
+  padding: 5px 10px 10px 10px;
+}
+
+.carousel-button {
+position: absolute;
+z-index: 100;
+top: 50%;
+border: solid red;
+display: inline-block;
+background-color: rgba(0,0,0,0);
+padding: 7px;
+transform: translateY(-50%) rotate(-45deg);
+-webkit-transform: translateY(-50%) rotate(-45deg);
+transition: transform 500ms;
+}
+
+.carousel-button:focus {
+  outline: none;
+  border-color: #484848;
+}
+
+.carousel-button-prev {
+left: -5px;
+border-width: 3px 0 0 3px;
+}
+
+.carousel-button-next {
+right: -5px;
+border-width: 0 3px 3px 0;
+}
+
+.carousel-button:hover {
+  border-color: #484848;
+  transition: transform 500ms;
+}
+
+.carousel-track-container {
+  position: relative;
+  padding: 0 5px 5px 0;
+  background-color: rgba(0,0,0,0);
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  height: 200px;
+  position: relative;
+  transition: transform 250ms;
+  background-color: rgba(0,0,0,0);
+}
+
+.carousel-iframes {
+  height: 199px;
+  width: 345px;
+  position: absolute;
+  padding: 5px 5px 5px 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+}
+/***  YouTube API App END  ***/
+
+
+
+
+
 
 .footer-section {
 	background-color: black;
@@ -341,37 +477,142 @@ hr {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.podcast-playlist {
-	margin: 15px;
-}
-
-.podcast-playlist h5 {
-	color: gray;
+	padding: 10px 0;
 }
 
 .social-links-footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding: 5px;
 }
 
 .social-link-ind-footer img {
 	width: 35px;
 	height: 35px;
-	margin: 15px;
+	padding: 5px;
 }
 
-/**********Archives**********/
+.menu-footer-menu-container {
+    
+}
+
+.nav-ul-list-footer {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: 'Merriweather', serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+.nav-ul-list-footer .menu-item {
+  list-style: none;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.nav-ul-list-footer .menu-item a {
+  text-decoration: none;
+  color: whitesmoke;
+ }
+
+.nav-ul-list-footer .menu-item a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.copywrite {
+    font-size: 0.65rem;
+    color: whitesmoke;
+    padding: 5px;
+}
+.copywrite p {
+    padding: 5px;
+}
+
+/**********Archives & Authors**********/
+
 
 .archive-main-content {
-	margin: 25px;
+	display: flex;
+	justify-content: space-around;
+	max-width: 1200px;
+	margin: auto;
+	overflow-x: hidden;
+}
+
+.archive-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	margin: 15px;
+	width: 60%;
+}
+
+.archive-section .post-categories li {
+    list-style-type: none;
+}
+
+.archive-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.archive-section .post-categories a {
+    text-decoration: none;
+    color: black;
+}
+
+.archive-section .post-categories a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .archive-posts {
 	max-width: 1000px;
-	margin: auto;
+	margin: 0 auto auto auto;
+}
+
+.archive-posts h3, .archive-posts span, .archive-posts p {
+    margin-bottom: 5px;
+}
+
+.archive-posts h3 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.archive-posts p {
+    font-size: 0.8rem;
+}
+
+.archive-posts a {
+	text-decoration: none;
+	color: black;
+}
+
+.archive-posts span {
+	font-size: 0.75em;
+}
+
+.archive-posts a:hover {
+	color: #f04400;
+  	opacity: 0.8;
+}
+
+.archive-posts-medium-thumbnail {
+    display: none;
+}
+
+.archive-posts-small-medium-thumbnail {
+    display: none;
 }
 
 .archive-posts-columns {
@@ -392,43 +633,28 @@ hr {
 	margin-right: 5px;
 }
 
-.archive-post-content h3 {
-	margin-top: 5px;
-}
-
-.archive-post-content a {
-	text-decoration: none;
-	color: black;
-}
-
-.archive-post-content span {
-	font-size: 0.75em;
-}
-
-.archive-post-content p {
-	font-size: 0.9em;
-	margin-bottom: 5px;
-}
-
-.archive-post-content a:hover {
-	color: #f04400;
-  	opacity: 0.8;
-}
-
 
 /**********Pages**********/
 
 .pages-main-container {
 	display: flex;
 	justify-content: space-around;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	overflow-x: hidden;
 }
 
 .pages-section {
 	margin: 15px;
-	width: 70%;
+	width: 60%;
+}
+
+.pages-section h1 {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .pages-section h2 {
@@ -437,8 +663,12 @@ hr {
 
 /*****Team-Page*****/
 
+.team-page-wrapper {
+    padding-bottom: 10px;
+}
+
 .team-profile-img {
-  width: 175px;
+  width: auto;
   height: 175px;
   margin: 10px;
   border-radius: 50%;
@@ -484,6 +714,264 @@ hr {
    margin-left: 3px;
    margin-right: 3px;
  }
+ 
+ .horz-line-thin {
+     background-color: gray;
+     height: 1px;
+     width: 100%;
+     margin: 10px 0;
+ }
+ 
+ .other-authors-team-page {
+    margin: 10px;
+ }
+
+ .other-authors-team-page h5 {
+    margin-bottom: 8px;
+ }
+
+
+/*****Podcasts Page*****/
+
+.pages-content-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-group {
+	margin: 10px auto 15px auto;
+}
+
+.podcast-player-inactive {
+    display: none;
+}
+
+.podcast-player-active {
+    display: block;
+}
+
+
+
+
+
+/***YouTube-App-Pod-Page-Start***/
+
+
+.youtube-pod-page-container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.youtube-pod-page-section {
+	text-align: center;
+	width: 100%;
+}
+
+.yt-subscribe-button-move {
+    margin: 5px 0 0 11%;
+}
+
+.youtube-pod-page-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 0;
+    width: 100%;
+}
+
+#youtube-pod-page-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.youtube-pod-page-video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#yt-sub-btn-spacing {
+    margin-top: 10px;
+}
+
+.youtube-pod-page-article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	/*border: 1px solid white;*/
+	margin: 0 auto;
+	cursor: pointer;
+	transition: box-shadow 350ms;
+	border-radius: 8px;
+}
+
+.youtube-pod-page-article:hover .thumb {
+	/*border-color: red;*/
+	box-shadow: 1px 1px 5px rgba(0,0,0,1);
+	transition: all 250ms;
+}
+	
+.youtube-pod-page-article:hover .details {
+	/*border-color: red;*/
+	color: #f04400;
+	opacity: 0.8;
+	transition: all 250ms;
+}
+	
+.youtube-pod-page-article .thumb {
+	width: 100%;
+}
+
+.youtube-pod-page-article .details {
+	padding: 5px;
+}
+
+.youtube-pod-page-article .details h4 {
+	font-size: 0.85rem;
+	text-align: center;
+}
+
+
+/***YouTube-App-Pod-Page-End***/
+
+
+
+
+
+
+/*****Subscribe Sign-Up Page*****/
+
+.subscribe-page-main-wrapper {
+    width: 100%;
+}
+
+.sub-page-sub-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.sub-page-sub-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+}
+
+.sub-page-sub-box-left h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-page-sub-box-left h5 {
+    padding: 10px;
+    text-align: center;
+}
+
+h5.sub-title-padding {
+    padding-top: 0;
+}
+
+.sub-page-sub-box-left p {
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-page-sub-box-left-list {
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-page-sub-box-left-list li {
+    padding: 10px;
+}
+
+.sub-page-sub-box-right {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+}
+
+.sub-page-sub-box-right h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-page-sub-box-right p {
+    padding: 10px;
+    text-align: center;
+}
+
+.sub-box-right-btn {
+    font-family: 'Merriweather', serif;
+    width: 250px;
+    height: 65px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    margin: 10px auto;
+    background-color: red;
+    border-style: solid;
+    border-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.sub-box-right-btn:hover {
+    background-color: black;
+    transition: background-color 250ms;
+}
+
+.sub-box-right-btn-2nd {
+    background-color: white;
+    border-width: 1px;
+    border-color: #484848;
+    border-style: solid;
+    color: #484848;
+    transition: background-color 250ms, color 250ms;
+}
+
+.sub-box-right-btn-2nd:hover {
+    background-color: red;
+    border-width: 0;
+    color: white;
+}
+
+.sub-box-right-btn p {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-btn-top {
+    font-size: 1.5rem;
+}
+
+.sub-btn-bottom {
+    font-size: 0.8rem;
+}
+
 
 
 /*********Individual-Posts**********/
@@ -492,20 +980,33 @@ hr {
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 1200px;
 }
 
 .posts-section {
 	margin: 15px;
-	width: 70%;
+	width: 60%;
 }
 
-.pages-section h1 {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+.posts-section h3 {
+    padding: 0 0 10px 0;
+}
+
+.posts-section h4, .posts-section h5 {
+    padding: 10px 0;
+}
+
+.posts-section p {
+    padding: 0 0 10px 0;
+}
+
+.posts-info-main {
+    box-shadow: 0 0 1px lightgray;
+    padding: 15px;
+}
+
+.thumbnail-h1-d {
+    box-shadow: 0 0 1px lightgray;
 }
 
 .thumbnail-h1-d img {
@@ -516,6 +1017,7 @@ hr {
 .author-date-span {
 	display: flex;
 	align-items: center;
+	padding: 0 0 10px 0;
 }
 
 #posts-avatar-circle img {
@@ -523,19 +1025,138 @@ hr {
 }
 
 .author-date-span p {
-	margin-right: 25px;
-	font-size: 0.8em;
+	margin-right: 15px;
+	font-size: 0.85em;
 }
+
+.wp-block-image {
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 1px 1px 2px gray;
+	padding: 5px;
+}
+
+
+
+/**Embed Youtube Video Responsive - START**/
+
+.wp-block-embed-youtube .wp-block-embed__wrapper{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.wp-block-embed-youtube .wp-block-embed__wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/**Embed Youtube Video Responsive - END**/
+
+
+
+
+/**********Comments Area**********/
+
+.comments-title {
+    font-size: 1.5em;
+}
+
+.comments-area {
+    box-shadow: 0 0 1px lightgrey;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.comment-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.comment-body div, .comment-body p {
+    margin-bottom: 5px;
+}
+
+.comment {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.comment p {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+.comment-author .avatar {
+    border-radius: 50%;
+}
+
+.comment-meta a {
+    font-size: 0.8em;
+}
+
+a.comment-edit-link {
+    font-size: 1em;
+}
+
+.reply {
+    margin: 15px 0;
+}
+
+.comment-reply-title {
+    font-size: 1.5em;
+}
+
+.comment-reply-link {
+    padding: 5px 10px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.comment-reply-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.comment-form-comment {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-submit .submit {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    margin: 0 auto 0 0;
+}
+
+
 
 /**********Sidebar-Primary**********/
 
 .sidebar {
-	margin: 15px;
-	width: 25%;
+	margin: 0 15px;
+	width: 35%;
 }
 
 .primary-sidebar-widget-area ul {
-	font-family: 'Oswald', sans-serif;
 	padding: 0 20px;
 }
 	
@@ -561,28 +1182,44 @@ hr {
 	align-items: center;
 	text-align: center;
 	border-style: solid;
-	border-radius: 5%;
-	border-width: 1px;
-	box-shadow: 1px 1px 2px gray;
-	padding: 5px;
+	border-color: red;
+	border-radius: 5px;
+	border-width: 5px;
+	box-shadow: 2px 2px 3px gray;
+	padding: 15px;
 	background-color: whitesmoke;
-	margin: 15px auto;
-	min-width: 250px;
-	max-width: 300px;
+	margin: 20px auto;
+	min-width: 300px;
+	max-width: 450px;
+	width: 95%;
+}
+
+.primary-sidebar-email h5 {
+	padding-bottom: 10px;
 }
 
 .primary-sidebar-email p {
 	font-size: 0.8em;
-	margin-bottom: 5px;
+	padding-bottom: 10px;
+	color: gray;
+}
+
+.e-email {
+    font-size: 0.8em;
+    
+}
+
+.e-name {
+    font-size: 0.8em;
 }
 
 .e-submit {
+    border-width: 0;
 	background-color: red;
+	color: white;
 	letter-spacing: 1px;
-	border-style: solid;
-	border-color: black;
-	color: whitesmoke;
-	padding: 3px 7px;
+	padding: 3px 10px;
+	margin: 10px auto 0 auto;
 }
 
 .fp-heading h5 {
@@ -595,7 +1232,81 @@ hr {
 }
 
 
+
+/**********Sidebar-Front**********/
+
+.front-sidebar {
+	margin: 0;
+	width: 30%;
+}
+
+#e-form-front-sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.front-sidebar-email {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-style: solid;
+	border-color: red;
+	border-radius: 5px;
+	border-width: 5px;
+	box-shadow: 2px 2px 3px gray;
+	padding: 15px;
+	background-color: whitesmoke;
+	margin: 0 auto 20px auto;
+	min-width: 250px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.front-sidebar-email h5 {
+	padding-bottom: 10px;
+}
+
+.front-sidebar-email p {
+	font-size: 0.8em;
+	padding-bottom: 10px;
+	color: gray;
+}
+
+.front-sidebar-email .e-email {
+    font-size: 0.8em;
+    
+}
+
+.front-sidebar-email .e-name {
+    font-size: 0.8em;
+}
+
+.front-sidebar-email .e-submit {
+    border-width: 0;
+	background-color: red;
+	color: white;
+	letter-spacing: 1px;
+	padding: 3px 10px;
+	margin: 10px auto 0 auto;
+}
+
+.fp-heading h5 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.sidebar-front-fp {
+    margin-bottom: 0;
+}
+
+
+
 /**********MEDIA**********/
+
 
 @media screen and (max-width: 1000px) {	
 
@@ -613,10 +1324,6 @@ hr {
 		margin-right: 0;
 }
 	
-.thumbnail-image-set {
-	
-	}
-	
 .main-side-posts-small-thumbnail {
 	display: none;
 }
@@ -625,7 +1332,7 @@ hr {
 	display: block;
 }
 	
-.sub-main-side-posts h1, .h1-author-smsp h1 {
+.sub-main-side-posts h1, .sub-mid-posts h1{
 	font-size: 1.25em;
 }
 
@@ -636,9 +1343,39 @@ hr {
 .middle-section {
 	width: 600px;
 	margin: 15px auto;
-	}
+}
+
+.m-s-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-s-1 .mid-posts {
+    width: 100%;
+}
+
+.front-sidebar {
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.load-next-ten {
+    width: 600px;
+}
 	
-/*Individual-Posts*/
+	
+/***  START YouTube API App  ***/
+
+
+
+/***  YouTube API App END  ***/
+	
+	
+	
+	
+/**Individual-Posts**/
 
 .posts-main-container {
 	flex-direction: column;
@@ -648,6 +1385,29 @@ hr {
 .posts-section {
 	margin: 15px auto;
 	width: 96%;
+}
+
+/**Archives & Authors**/
+
+.archive-main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.archive-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+	max-width: 675px;
+}
+	
+.archive-posts h3 {
+	font-size: 1.3em;
 }
 	
 /**Pages**/	
@@ -662,25 +1422,42 @@ hr {
 	align-items: center;
 	margin: 15px auto;
 }
-	
-	
-/**********Archives**********/
-	
-.archive-post-content h3 {
-	font-size: 1.5em;
-	margin-top: 2px;
+
+/**Subscribe Page**/
+
+.sub-page-sub-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.archive-post-content span {
-	font-size: 0.7em;
+.sub-page-sub-box-left {
+    width: 100%;
 }
 
-.archive-post-content p {
-	font-size: 0.8em;
-	margin-bottom: 2px;
+.sub-page-sub-box-right {
+    width: 100%;
+    padding-top: 0;
 }
-	
+
+
 /*****Team-Page*****/
+
+.other-authors-team-page {
+ }
+
+
+.team-member-odd {
+	flex-direction: column;
+}
+	
+.team-member-even {
+	flex-direction: column-reverse;
+}
+
+.bio {
+	margin: 0 10px;
+}
 	
 .bio h5 {
 	font-size: 1.2em;
@@ -730,8 +1507,6 @@ hr {
 	width: 100%;
 	background-color: white;
 	z-index: 1;
-	/*transform: translateX(100%);*/
-	
 	}
 	
 .menu-item {
@@ -745,16 +1520,6 @@ hr {
 	
 .nav-active {
 	display: block;
-	position: absolute;
-	top: 60px;
-	left: 0;
-	right:0;
-	padding: 0;
-	height: auto;
-	width: 100%;
-	background-color: white;
-	z-index: 1;
-	/*transform: translateX(100%);*/
 }
 	
 .social-link-ind {
@@ -791,18 +1556,9 @@ hr {
 		display: block;
 		width: 100%;
 		height: 100%;
-			
 	}
 	
 .thumbnail-image-set {
-		display: none;
-	}
-	
-	.c2 {
-		padding-right: 0;
-	}
-	
-.c3 {
 		display: none;
 	}
 	
@@ -814,6 +1570,38 @@ hr {
 		display: flex;
 	}
 	
+.load-next-ten {
+    width: 100%;
+}
+
+.load-next-ten-btn {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+	
+	
+	
+/***  START YouTube API App  ***/
+.yt-carousel {
+  width: 100%;
+  padding: 0 10px;
+}
+	
+
+/**Archives Authors**/
+
+.archive-posts-medium-thumbnail {
+    display: block;
+}
+
+.archive-posts-medium-large-thumbnail {
+    display: none;
+}
+	
+.archive-post-content p {
+    display: none;
+}
+	
 /**Pages**/
 
 .pages-section {
@@ -822,36 +1610,55 @@ hr {
 	margin: 0 auto;
 }
 	
-/*****Team-Page*****/
 
-.team-profile-img {
-	margin: 10px 10px 0 10px;
-}
-
-
-.team-member-odd {
-	flex-direction: column;
-}
+/**Podcasts Page**/
 	
-.team-member-even {
-	flex-direction: column-reverse;
-}
 
-.bio {
-	margin: 0 10px;
-}
+	
 	
 /**Individual-Posts**/
 
 .posts-main-container {
 	width: 100%;
 }	
+
+.posts-info-main {
+    padding: 10px;
+}
+
+
+/***Comment-Section***/
+
+.comments-area {
+    padding: 10px;
+}
 	
 }
 
 
 
+@media (max-width: 600px) {
+
+/***YouTube-App-Pod-Page-Start***/
+
+.youtube-pod-page-main {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/***YouTube-App-Pod-Page-End***/
+
+}
+
+
 @media (max-width: 475px) {
+    
+p {
+  font-size: 0.85em;
+}
+
+textarea {
+    font-size: 0.85em;
+}
 	
 .nav-container {
   padding-left: 10px;
@@ -866,13 +1673,8 @@ hr {
 }
 	
 #sub-button-div button {
-	border: 0;
-	border-radius: 3px;
-	background-color: red;
-	color: white;
-	font-family: 'Oswald', sans-serif;
 	font-size: 0.75em;
-	padding-top: 0;
+	margin-top: 5px;
 }
 	
 .main-content {
@@ -884,35 +1686,100 @@ hr {
 	font-size: 1.75em;
 }
 	
-.sub-main-side-posts h1, .h1-author-smsp h1 {
-	font-size: 1em;
+.sub-main-side-posts h1 {
+	font-size: 0.9em;
 }
 
-	.main-side-posts-small-thumbnail, .mid-posts-small-thumbnail {
+.sub-mid-posts h1 {
+	font-size: 0.95em;
+}
+
+.main-side-posts-small-thumbnail, .mid-posts-small-thumbnail {
 	display: block;
 }
 	
 .main-side-posts-medium-thumbnail, .mid-posts-medium-thumbnail {
 	display: none;
 }
-	
-.c1 {
-		padding-right: 0;
-	}
-	
-.c2 {
-		display: none;
-	}
-	
-.c3 {
-		display: none;
-	}
-	
-/*Individual-Posts*/
 
-.posts-section {
-	
+
+/*** START YouTube Carousel ***/
+.yt-carousel h4 {
+    font-size: 1.25em;
+}
+/*** YouTube Carousel END ***/
+
+
+/***Archives***/
+
+.archive-posts-small-medium-thumbnail {
+    display: block;
 }
 
+.archive-posts-medium-thumbnail {
+    display: none;
 }
 
+.archive-posts h3 {
+    font-size: 0.95rem;
+}
+
+	
+/***Individual-Posts***/
+
+.posts-info-main {
+    padding: 5px;
+}
+
+.author-date-span p {
+	margin-right: 5px;
+}
+
+
+/***Comment-Section***/
+
+.comments-area {
+    padding: 5px;
+}
+
+.comment-form-comment label {
+    font-size: 1rem;
+}
+
+.form-submit .submit {
+    font-size: 1rem;
+}
+
+/**********Page**********/
+
+/*****Podcast-Page*****/
+
+/***Youtube-App-Pod-Page-Start***/
+
+.youtube-pod-page-main {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.youtube-pod-page-article {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    /**border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    border-radius: 5px;**/
+}
+
+.youtube-pod-page-article .thumb {
+	width: 35%;
+}
+
+.youtube-pod-page-article .details h4 {
+    padding-left: 5px;
+    text-align: left;
+}
+
+/***Youtube-App-Pod-Page-End***/
+
+
+}

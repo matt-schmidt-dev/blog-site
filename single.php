@@ -23,16 +23,33 @@
 					<p class="p-posts-margin" id="date-stamp">
 						<?php the_date(); ?>
 					</p>
+					<p class="vertical-line">
+						|
+					</p>
+					<p class="p-posts-margin" id="comments-link-number"><a href="<?php comments_link(); ?>">
+                    	<?php
+                        printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'textdomain' ), number_format_i18n( 		get_comments_number() ) ); ?>
+                    </a></p>
 				</div>
 
 				<?php endwhile; endif; ?>
 			</div>
 			<div>
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+			    ?>
 				<span class="all-single-posts"><?php the_content();?></span>
+				
 				<?php endwhile; endif; ?>
+				
+				
+				
 			</div>
 		</div>
+		<?php
+				if ( comments_open() || get_comments_number() ) {
+					comments_template();
+				};
+				?>
 	</div>
 	
 	<hr>

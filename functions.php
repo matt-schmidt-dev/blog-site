@@ -18,6 +18,45 @@ add_filter('tiny_mce_before_init', 'tags_tinymce_fix');
 
 
 
+
+// function for inserting Google Analytics into the wp_head
+add_action('wp_head', 'ga');
+function ga() {
+   if ( !is_user_logged_in() ) { // not for logged in users
+?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148510973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148510973-1');
+</script>
+
+<?php
+   }
+}
+
+
+
+
+/***
+//Add read_private_posts capability to subscriber
+//Note this is saves capability to the database on admin_init, so consider doing this once on theme/plugin activation
+add_action ('admin_init','add_sub_caps');
+ 
+function add_sub_caps() {
+    global $wp_roles;
+    $role = get_role('subscriber');
+    $role->add_cap('read_private_posts');
+}
+***/
+
+
+
+
+
+//Custom Styles
 function additional_custom_styles() {
 
     /*Enqueue The Styles*/
@@ -26,12 +65,16 @@ function additional_custom_styles() {
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles' );
 
 
+
+//Custom Scripts
 function additional_custom_scripts() {
-	wp_enqueue_script( 'coolstuff', get_stylesheet_directory_uri() . '/script.js', array('jquery'), '6.0.0', true);
+	wp_enqueue_script( 'coolstuff', get_stylesheet_directory_uri() . '/script.js', array('jquery'), '1.3.3', true);
 }
 add_action( 'wp_enqueue_scripts', 'additional_custom_scripts' );
 
 
+
+//Add Menus
 add_theme_support('menus');
 
 function ab2w_register_theme_menus () {
@@ -49,19 +92,27 @@ function ab2w_register_theme_menus () {
 
 add_action('init', 'ab2w_register_theme_menus');
 	
-	
+
+
+//Post-Thumbnail Size Options
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(1920, 1080, true ); // default Image dimensions (cropped)
 
-add_image_size( 'xlarge-thumbnail-size', 700, 0, true );
+add_image_size( 'xlarge-thumbnail-size', 710, 0, true );
 add_image_size( 'large-thumbnail-size', 600, 0, true );
 add_image_size( 'large-medium-thumbnail-size', 450, 0, true );
 add_image_size( 'medium-large-thumbnail-size', 300, 0, true );
-add_image_size( 'medium-thumbnail-size', 175, 0, true );
-add_image_size( 'small-thumbnail-size', 100, 0, true );
+add_image_size( 'medium-thumbnail-size', 215, 0, true );
+add_image_size( 'small-medium-thumbnail-size', 175, 0, true );
+add_image_size( 'small-thumbnail-size', 125, 0, true );
 
 
+
+//Add Widgets
 add_action( 'widgets_init', 'my_register_sidebars' );
+
+
+//Add Sidebars
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
     register_sidebar(
@@ -75,9 +126,23 @@ function my_register_sidebars() {
             'after_title'   => '</h3>',
         )
     );
+    
+    register_sidebar(
+        array(
+            'id'            => 'front',
+            'name'          => __( 'Front Sidebar' ),
+            'description'   => __( 'Sidebar for Front Page.' ),
+            'before_widget' => '<div id="%1$s" class="front-widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="front-widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
     /* Repeat register_sidebar() code for additional sidebars. */
 	
 }
+
+
 
 /**
  * Filter the except length to 20 words.
@@ -86,7 +151,7 @@ function my_register_sidebars() {
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 50;
+    return 25;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
